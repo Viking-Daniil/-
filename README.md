@@ -270,3 +270,52 @@
     сгенерированы функцией.
 
 ### Решение
+    function getRandomInt(min, max, mas)
+    {
+    num = Math.floor(Math.random() * (max - min)) + min
+    while(mas.indexOf(num) != -1 )
+    {
+      num = Math.floor(Math.random() * (max - min)) + min
+    }
+    function checkNumber()
+    	{
+		mas.push(num)
+		console.log("Сгенерированное число:", num)
+		console.log(mas) 
+    	}
+      return checkNumber
+    }
+
+    massiv = []
+    for(i = 0; i < 111; i++)
+    {
+    	if(massiv.length == 100)
+    	{
+    		massiv = []
+    	}
+    	number = getRandomInt(1, 101, massiv)
+    	console.log(number())
+    }
+    
+ -----------------------------------
+
+### Задание 4.1
+    Построить объект студент:
+	- свойства: Имя, Фамилия, Возраст, Интересы (в виде массива), Место обучения.
+	- метод объекта выводящий в консоль
+	биографическую справку в виде, например:
+	«Иван Петров. 21 год. Интересы: программирование,
+	музыка, аниме. Учится в ГУАП
+
+### Решение
+   	let Student1 = {
+	name: "Даниил",
+  	surname: "Голота",
+	age: 22,
+	interests: ["Музыка", "Кино", "Путешествия"],
+	studyPlace: "ГУАП",
+	info:  function() {
+		console.log(this.name + this.surname + ". " + this.age + "года. Интересы: "+this.interests + ". Учиться в " + this.studyPlace + ".")
+	}
+	};
+	Student1.info()
