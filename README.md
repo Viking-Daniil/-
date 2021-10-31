@@ -315,7 +315,7 @@
 	interests: ["Музыка", "Кино", "Путешествия"],
 	studyPlace: "ГУАП",
 	info:  function() {
-		console.log(this.name + this.surname + ". " + this.age + "года. Интересы: "+this.interests + ". Учиться в " + this.studyPlace + ".")
+		console.log(this.name + " " + this.surname + ". " + this.age + "года. Интересы: "+this.interests + ". Учиться в " + this.studyPlace + ".")
 	}
 	};
 	Student1.info()
